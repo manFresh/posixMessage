@@ -14,6 +14,22 @@ int subtract(int number1,int number2);
 int multiply(int number1,int number2);
 int divide(int number1,int number2);
 
+#define MAX_FUN 5
+
+typedef int (*OUT)(int num1,int num2);
+
+typedef struct {
+    int item;
+    OUT out;
+}OUT_FUN;
+
+static OUT_FUN out_fun[MAX_FUN]={
+    {1,add},
+    {2,subtract},
+    {3,multiply},
+    {4,divide}
+};
+
 #endif
 
 

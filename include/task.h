@@ -9,26 +9,6 @@
 #ifndef _TASK_H
 #define _TAKS_H
 
-#include "/home/zhang-yinliang/zyl/message/fun/fun.h"
- 
-#define MAX_FUN 5
-
-typedef int (*OUT)(int num1,int num2);
-
-typedef struct {
-    int item;
-    OUT out;
-}OUT_FUN;
-
-void thread(void);
-
-static OUT_FUN out_fun[MAX_FUN]={
-    {1,add},
-    {2,subtract},
-    {3,multiply},
-    {4,divide}
-};
-
 void init_task();
 
 #endif

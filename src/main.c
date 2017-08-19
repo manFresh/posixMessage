@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "/home/zhang-yinliang/zyl/ms_pth/include/task.h"
+#include "../include/task.h"
 
 int main()
 {

@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "/home/zhang-yinliang/zyl/ms_pth/include/task.h"
+#include "../include/fun.h"
 
 //创建消息名
 char *mq_name = (char*)"/MQ_Msg";
